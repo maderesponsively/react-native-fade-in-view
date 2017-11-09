@@ -12,13 +12,14 @@ class FadeInView extends Component {
 
   componentDidMount() {
     const { viewOpacity } = this.state;
-    const { onFadeComplete, duration = 500 } = this.props;
+    const { onFadeComplete, duration = 500, delay = 300 } = this.props;
 
     Animated.timing(
       viewOpacity,
       {
         toValue: 1,
         duration,
+        delay: 300
       },
     ).start(onFadeComplete || (() => {}));
   }
