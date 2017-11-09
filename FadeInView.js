@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { Animated } from 'react-native';
 
 class FadeInView extends Component {
@@ -34,20 +34,5 @@ class FadeInView extends Component {
     );
   }
 }
-
-FadeInView.propTypes = {
-  onFadeComplete: PropTypes.func,
-  duration: PropTypes.number,
-  style: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.object,
-    PropTypes.array,
-  ]),
-  children: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.object,
-  ]).isRequired,
-};
 
 export default FadeInView;
