@@ -19,7 +19,7 @@ class FadeInView extends Component {
       {
         toValue: 1,
         duration,
-        delay: 300
+        delay
       },
     ).start(onFadeComplete || (() => {}));
   }
