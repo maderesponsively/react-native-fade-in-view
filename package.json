@@ -9,10 +9,6 @@
   "scripts": {
     "lint": "eslint FadeInView.js"
   },
-  "peerDependencies": {
-    "react": "^15.4.2",
-    "react-native": "^0.40.0"
-  },
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-eslint": "^7.1.1",
